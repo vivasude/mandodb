@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+ name: mongo-data
+spec:
+ storageClassName: ""
+ accessModes:
+  - ReadWriteOnce
+ volumeName: mongo-data-pv
+ resources:
+  requests:
+   storage: 1Gi
